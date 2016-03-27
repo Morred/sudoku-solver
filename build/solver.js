@@ -29,7 +29,8 @@
           var cell;
           cell = this;
           if (cell.textContent) {
-            return fields[row.context.rowIndex].push(cell.textContent);
+            fields[row.context.rowIndex].push(cell.textContent);
+            return $(cell).addClass('fixed-number');
           } else {
             return fields[row.context.rowIndex].push(null);
           }

@@ -25,6 +25,7 @@ $ ->
         cell = this
         if cell.textContent
           fields[row.context.rowIndex].push(cell.textContent)
+          $(cell).addClass('fixed-number')
         else
           fields[row.context.rowIndex].push(null)
       $('td').prop('contenteditable', false)

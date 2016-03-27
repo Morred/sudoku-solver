@@ -22,6 +22,8 @@ p {
         text-align: center; }
         .sudoku-container .sudoku table tr td.border-right {
           border-right: 2px solid black; }
+        .sudoku-container .sudoku table tr td.fixed-number {
+          background-color: #ead9ed; }
   .sudoku-container .buttons {
     margin-top: 20px; }
     .sudoku-container .buttons .solve-buttons, .sudoku-container .buttons .reset-button {

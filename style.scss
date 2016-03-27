@@ -28,6 +28,10 @@ p {
           &.border-right {
             border-right: 2px solid black;
           }
+
+          &.fixed-number {
+            background-color: #ead9ed;
+          }
         }
       }
     }

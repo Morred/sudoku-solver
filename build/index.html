@@ -5,113 +5,135 @@
       Sudoku Solver
     </title>
     <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src='../plugins/jquery-2.2.2.min.js' type='text/javascript'></script>
+    <script src='solver.js' type='text/javascript'></script>
   </head>
   <body>
     <h1>
       Sudoku Solver
     </h1>
-    <div class='sudoku'>
-      <table>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class='border-top'>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class='border-top'>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td class='border-right'></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+    <p>
+      Enter the given numbers into the grid below.</br> Click 'Full solution' to get the completely solved puzzle or 'Next step' for a step-by-step solution.</br> Click 'Reset' to reset the grid.
+    </p>
+    <div class='sudoku-container'>
+      <div class='sudoku'>
+        <table>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr class='border-top'>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr class='border-top'>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+          <tr>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td class='border-right' contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+            <td contenteditable></td>
+          </tr>
+        </table>
+      </div>
+      <div class='buttons'>
+        <div class='solve-buttons'>
+          <div class='button next-step'>
+            Next step
+          </div>
+          <div class='button solution'>
+            Full solution
+          </div>
+        </div>
+        <div class='reset-button'>
+          <div class='button reset'>
+            Reset
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -4,128 +4,141 @@
     %title
       = "Sudoku Solver"
     %link{:rel => :stylesheet, :type => :"text/css", :href => "style.css"}
+    %script{:type => "text/javascript", :src => "../plugins/jquery-2.2.2.min.js"}
+    %script{:type => "text/javascript", :src => "solver.js"}
   %body
     %h1
       = "Sudoku Solver"
+    %p
+      = "Enter the given numbers into the grid below.</br> Click 'Full solution' to get the completely solved puzzle or 'Next step' for a step-by-step solution.</br> Click 'Reset' to reset the grid."
+    .sudoku-container
+      .sudoku
+        %table
 
-    .sudoku
-      %table
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-        %tr
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
 
-          %td
-          %td
-          %td
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-        %tr
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
 
-          %td
-          %td
-          %td
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-        %tr
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td
-
-
-        %tr.border-top
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td
-
-        %tr
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td
-
-        %tr
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td.border-right
-
-          %td
-          %td
-          %td
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
 
 
-        %tr.border-top
-          %td
-          %td
-          %td.border-right
+          %tr.border-top
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
 
-        %tr
-          %td
-          %td
-          %td.border-right
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
 
-        %tr
-          %td
-          %td
-          %td.border-right
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td.border-right
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
 
-          %td
-          %td
-          %td
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+
+          %tr.border-top
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
+
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
+
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
+
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
+
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+
+          %tr
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
+
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td.border-right{:contenteditable => true}
+
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+            %td{:contenteditable => true}
+
+      .buttons
+        .solve-buttons
+          .button.next-step
+            = "Next step"
+          .button.solution
+            = "Full solution"
+        .reset-button
+          .button.reset
+            = "Reset"

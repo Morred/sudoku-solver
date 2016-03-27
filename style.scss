@@ -1,21 +1,53 @@
-.sudoku {
-  table {
-    border-spacing:0;
-    border-collapse: collapse;
-    border: 2px solid black;
-    tr {
-      &.border-top {
-          border-top: 2px solid black;
-        }
-      td {
-        border: 1px solid black;
-        height: 30px;
-        width: 30px;
+h1 {
+  text-align: center;
+}
 
-        &.border-right {
-          border-right: 2px solid black;
+p {
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.sudoku-container {
+  text-align: center;
+  .sudoku {
+    display: inline-block;
+    table {
+      border-spacing:0;
+      border-collapse: collapse;
+      border: 2px solid black;
+      tr {
+        &.border-top {
+            border-top: 2px solid black;
+          }
+        td {
+          border: 1px solid black;
+          height: 30px;
+          width: 30px;
+          text-align: center;
+
+          &.border-right {
+            border-right: 2px solid black;
+          }
         }
       }
     }
   }
+  .buttons {
+    margin-top: 20px;
+    .solve-buttons, .reset-button {
+      margin-top: 10px;
+      .button {
+        padding: 7px 10px;
+        border: 1px solid grey;
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        &.next-step {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  
 }

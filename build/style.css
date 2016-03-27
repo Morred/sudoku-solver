@@ -1,14 +1,39 @@
-.sudoku table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border: 2px solid black; }
-  .sudoku table tr.border-top {
-    border-top: 2px solid black; }
-  .sudoku table tr td {
-    border: 1px solid black;
-    height: 30px;
-    width: 30px; }
-    .sudoku table tr td.border-right {
-      border-right: 2px solid black; }
+h1 {
+  text-align: center; }
+
+p {
+  text-align: center;
+  line-height: 1.2em; }
+
+.sudoku-container {
+  text-align: center; }
+  .sudoku-container .sudoku {
+    display: inline-block; }
+    .sudoku-container .sudoku table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      border: 2px solid black; }
+      .sudoku-container .sudoku table tr.border-top {
+        border-top: 2px solid black; }
+      .sudoku-container .sudoku table tr td {
+        border: 1px solid black;
+        height: 30px;
+        width: 30px;
+        text-align: center; }
+        .sudoku-container .sudoku table tr td.border-right {
+          border-right: 2px solid black; }
+  .sudoku-container .buttons {
+    margin-top: 20px; }
+    .sudoku-container .buttons .solve-buttons, .sudoku-container .buttons .reset-button {
+      margin-top: 10px; }
+      .sudoku-container .buttons .solve-buttons .button, .sudoku-container .buttons .reset-button .button {
+        padding: 7px 10px;
+        border: 1px solid grey;
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer; }
+        .sudoku-container .buttons .solve-buttons .button.next-step, .sudoku-container .buttons .reset-button .button.next-step {
+          margin-right: 5px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.sudoku table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 2px solid black; }
+  .sudoku table tr.border-top {
+    border-top: 2px solid black; }
+  .sudoku table tr td {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px; }
+    .sudoku table tr td.border-right {
+      border-right: 2px solid black; }
+
+/*# sourceMappingURL=style.css.map */
